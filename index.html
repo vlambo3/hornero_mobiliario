@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hornero Mobiliario | Transformamos Tu Hogar Sin Complicaciones</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Plus Jakarta Sans (Tipografía idéntica a las capturas) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome 6 for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Archivo CSS Externo -->
+    <link rel="stylesheet" href="styles_landing.css">
+    <link rel="stylesheet" href="style_process.css">
+    <link rel="stylesheet" href="style_our_lines.css">
+    <link rel="stylesheet" href="styles.css">    
+    <link rel="stylesheet" href="style_essence.css">
+    <link rel="stylesheet" href="style_faq.css">
+    <link rel="stylesheet" href="style_footer.css">
+
+</head>
+
+<body class="antialiased text-neutral-800 bg-white selection:bg-brandLabel selection:text-white">
+
+
+    <!-- HERO SECTION CON FONDO Y NAVBAR SUPERIOR -->
+    <div
+        class="relative w-full min-h-[90vh] lg:min-h-screen bg-neutral-900 text-white flex flex-col justify-between overflow-hidden">
+
+        <!-- Imagen de Fondo Hero con Difuminado Sutil Únicamente en el Borde Inferior -->
+        <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+            <!-- Imagen de fondo completa -->
+            <img src="https://github.com/vlambo3/landing-hornero/blob/main/landing.jpg?raw=true"
+                alt="Fondo Hornero Mobiliario" class="w-full h-full object-cover object-center" />
+
+            <!-- CAPA EXTRA PARA OSCURECER APENAS LA IMAGEN (Ajusta /20 por /25 o /30 según el gusto) -->
+            <div class="absolute inset-0 bg-black/55"></div>
+
+            <!-- Dark overlay ligero en la parte superior para resaltar el texto y navbar -->
+            <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-transparent"></div>
+
+            <!-- Fade/Difuminado muy suave de blanco sólo en el último 15%-20% inferior -->
+            <div
+                class="absolute bottom-0 left-0 right-0 h-28 sm:h-36 bg-gradient-to-t from-white via-white/40 to-transparent">
+            </div>
+        </div>
+
+        <!-- NAVBAR FIJO, CENTRADO Y FINO -->
+        <header id="navbar"
+            class="fixed top-0 left-0 right-0 z-50 w-full py-2.5 px-6 flex justify-center items-center transition-all duration-300">
+            <div class="max-w-7xl w-full flex items-center justify-between">
+
+                <!-- Logo Hornero (fino y centrado verticalmente) -->
+                <a href="index.html"
+                    class="text-base sm:text-lg font-light tracking-wide text-white hover:opacity-90 transition-opacity flex items-center">
+                    Hornero
+                </a>
+
+                <!-- Navegación Desktop Centrada -->
+                <nav class="hidden md:flex items-center space-x-8 lg:space-x-10 text-xs sm:text-sm font-light">
+                    <a href="#procesos" class="text-white hover:opacity-80 transition-opacity">Nuestro Proceso</a>
+                    <a href="#servicios" class="text-white hover:opacity-80 transition-opacity">Servicios</a>
+                    <a href="#lineas" class="text-white hover:opacity-80 transition-opacity">Nuestras Líneas</a>
+                    <a href="#testimonios" class="text-white hover:opacity-80 transition-opacity">Testimonios</a>
+                    <a href="#alianzas" class="text-white hover:opacity-80 transition-opacity">Alianzas</a>
+                    <a href="#escencia" class="text-white hover:opacity-80 transition-opacity">Sobre
+                        Nosotros</a>
+                    <a href="#faq" class="text-white hover:opacity-80 transition-opacity">FAQ</a>
+                </nav>
+
+                <!-- Menú Mobile Hamburguesa -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white focus:outline-none p-1" aria-label="Abrir Menú">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Menú Desplegable Mobile -->
+            <div id="mobile-menu"
+                class="hidden md:hidden absolute top-full left-0 right-0 bg-[#2A1B12]/95 backdrop-blur-md border-b border-white/10 px-6 py-3 space-y-2 font-light">
+                <a href="amoblamientos-mdf.html"
+                    class="block text-white py-2 border-b border-white/10 text-center">Amoblamientos MDF</a>
+                <a href="muebles.html" class="block text-white py-2 border-b border-white/10 text-center">Muebles</a>
+                <a href="sobre-nosotros.html" class="block text-white py-2 border-b border-white/10 text-center">Sobre
+                    Nosotros</a>
+                <a href="contacto.html" class="block text-white py-2 text-center">Contacto</a>
+            </div>
+        </header>
+
+        <!-- CONTENIDO PRINCIPAL HERO -->
+        <main class="relative z-10 max-w-5xl mx-auto px-6 text-center my-auto pt-28 pb-12 space-y-6">
+            <h3 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-white mb-8">
+                Transformamos Tu Hogar Sin Complicaciones.
+            </h3>
+
+            <p class="text-xl sm:text-2xl lg:text-3xl font-semibold text-white/95 tracking-tight">
+                Diseño exclusivo y acompañamiento en cada detalle
+            </p>
+
+            <p class="text-sm sm:text-base lg:text-lg font-light text-white/85 leading-relaxed max-w-4xl mx-auto pt-2">
+                En Hornero Mobiliario, convertimos la visión de tu espacio ideal en una realidad tangible. Desde piezas
+                únicas en madera y hierro hasta amoblamientos en MDF a medida, te ofrecemos soluciones sofisticadas con
+                un proceso de diseño y creación fluido y transparente.
+            </p>
+        </main>
+
+        <!-- BOTÓN CONTACTAR CENTRADO ABAJO DEL TEXTO -->
+        <div class="relative z-10 max-w-5xl mx-auto px-6 flex justify-center pb-8">
+            <a href="https://wa.me/5492612350202?text=Hola!%20Me%20interesa%20consultar%20por%20un%20proyecto."
+                target="_blank"
+                class="glass-button text-white/90 hover:text-white px-7 py-2.5 rounded-full flex items-center space-x-3 hover:bg-white/30 transition-all duration-300 group shadow-lg">
+                <span class="text-xs sm:text-sm font-light tracking-wide">Contactar</span>
+                <div
+                    class="w-7 h-7 rounded-full bg-[#25D366] flex items-center justify-center text-white shadow-md group-hover:scale-110 transition-transform">
+                    <i class="fa-brands fa-whatsapp text-sm"></i>
+                </div>
+            </a>
+        </div>
+
+        <!-- TARJETA REPUTACIÓN COMPROBADA EN LA ESQUINA INFERIOR DERECHA -->
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full pb-6 flex justify-end">
+            <a href="https://www.google.com/search?sca_esv=005fa50a9cf86e73&hl=es&cs=1&output=search&kgmid=/g/11rw7fww24&q=Hornero+Mobiliario&shem=dlvs1,epsd1,esd2e,ltae,rimspwouoe&shndl=30&source=sh/x/loc/uni/m1/1&kgs=a03af161d9661187&utm_source=dlvs1,epsd1,esd2e,ltae,rimspwouoe,sh/x/loc/uni/m1/1#lrd=0x967e0b6e1bcf6f51:0x48ff996b03202b74,1,,,,&topic=mid:iPSalRx_AC0"
+                target="_blank" rel="noopener noreferrer"
+                class="glass-card p-4 sm:p-5 rounded-2xl max-w-xs text-center text-white shadow-xl relative overflow-hidden block transition-all duration-300 hover:bg-white/25 hover:scale-[1.02]">
+                <div class="flex flex-col items-center justify-center mb-1.5">
+                    <!-- Icono Google SVG centrada -->
+                    <svg class="w-8 h-8 mb-2" viewBox="0 0 24 24">
+                        <path fill="#4285F4"
+                            d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                        <path fill="#34A853"
+                            d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                        <path fill="#FBBC05"
+                            d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
+                        <path fill="#EA4335"
+                            d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
+                    </svg>
+                    <h3 class="font-semibold text-xs tracking-wide text-white">Reputación Comprobada</h3>
+                </div>
+                <p class="text-[10px] text-white/80 leading-snug font-light mb-2">
+                    La mejor garantía son nuestros clientes satisfechos. Contamos con una evaluación de 4.9 estrellas en
+                    Google Maps que avalan nuestro compromiso y excelencia.
+                </p>
+                <!-- Estrellas doradas -->
+                <div class="flex items-center justify-center space-x-1 text-amber-400 text-[10px]">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- SECCIÓN ¿POR QUÉ HORNERO MOBILIARIO? -->
+    <section class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 text-center">
+
+            <!-- Encabezado de la Sección -->
+            <div class="max-w-3xl mx-auto mb-16 space-y-3">
+                <h3 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-neutral-900 tracking-tight">
+                    ¿Por Qué Hornero Mobiliario?
+                </h3>
+                <p class="text-base sm:text-lg text-neutral-600 font-light">
+                    Diseño, Confianza y Tranquilidad en Cada Proyecto
+                </p>
+            </div>
+
+            <!-- Grid de 4 Columnas / Tarjetas con Sombras Suaves -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+
+                <!-- Tarjeta 1: Acompañamiento -->
+                <div class="feature-card p-8 text-center flex flex-col items-center">
+                    <!-- Icono Circular Rosado/Terracota -->
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-rose-100/80 text-rose-800 flex items-center justify-center mb-6 shadow-sm">
+                        <i class="fa-solid fa-clipboard-list text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg sm:text-xl text-neutral-900 mb-3 leading-snug">
+                        Acompañamiento <br />De Principio A Fin
+                    </h3>
+                    <p class="text-xs sm:text-sm text-neutral-500 font-light leading-relaxed">
+                        Olvídate del estrés. Te guiamos y asesoramos en cada etapa, desde la idea inicial hasta la
+                        instalación final, con un proceso ordenado y completamente transparente.
+                    </p>
+                </div>
+
+                <!-- Tarjeta 2: Diseño Único Y Personalizado -->
+                <div class="feature-card p-8 text-center flex flex-col items-center">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-rose-100/80 text-rose-800 flex items-center justify-center mb-6 shadow-sm">
+                        <i class="fa-solid fa-pen-ruler text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg sm:text-xl text-neutral-900 mb-3 leading-snug">
+                        Diseño Único Y <br />Personalizado
+                    </h3>
+                    <p class="text-xs sm:text-sm text-neutral-500 font-light leading-relaxed">
+                        Cada pieza es una extensión de tu estilo. No seguimos moldes: cada mueble o amoblamiento se
+                        ajusta a tu espacio, a tu vida y a lo que realmente necesitas.
+                    </p>
+                </div>
+
+                <!-- Tarjeta 3: Calidad Y Durabilidad -->
+                <div class="feature-card p-8 text-center flex flex-col items-center">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-rose-100/80 text-rose-800 flex items-center justify-center mb-6 shadow-sm">
+                        <i class="fa-solid fa-shield-halved text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg sm:text-xl text-neutral-900 mb-3 leading-snug">
+                        Calidad Y <br />Durabilidad
+                    </h3>
+                    <p class="text-xs sm:text-sm text-neutral-500 font-light leading-relaxed">
+                        Seleccionamos cuidadosamente cada material y herraje para asegurar que tu mueble sea duradero,
+                        bello y funcional por años.
+                    </p>
+                </div>
+
+                <!-- Tarjeta 4: Detalles Que Enamoran -->
+                <div class="feature-card p-8 text-center flex flex-col items-center">
+                    <div
+                        class="w-16 h-16 rounded-2xl bg-rose-100/80 text-rose-800 flex items-center justify-center mb-6 shadow-sm">
+                        <i class="fa-solid fa-gem text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg sm:text-xl text-neutral-900 mb-3 leading-snug">
+                        Detalles Que <br />Enamoran
+                    </h3>
+                    <p class="text-xs sm:text-sm text-neutral-500 font-light leading-relaxed">
+                        Cada pieza pasa por un ojo entrenado en el detalle. Terminaciones cuidadas, encastres precisos y
+                        una mirada estética que transforma un mueble en una obra.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 1: NUESTRO PROCESO -->
+    <section id="procesos" class="py-16 sm:py-24 bg-[#FAF6F0]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Section Header -->
+            <div class="text-center max-w-none mx-auto mb-12 space-y-3">
+                <span class="text-xs sm:text-sm font-semibold uppercase tracking-[0.25em] text-[#B08968]">
+                    NUESTRO PROCESO
+                </span>
+                <h3 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#2B2118] tracking-tight leading-tight">
+                    Diseñamos, Creamos y Acompañamos Tu Sueño
+                </h3>
+                <p class="text-xs sm:text-sm text-[#5C554E] leading-relaxed max-w-2xl mx-auto">
+                    Convertir tu visión en realidad nunca fue tan fácil. En Hornero Mobiliario, te acompañamos en cada
+                    etapa, sin sorpresas ni vueltas.
+                </p>
+            </div>
+
+            <!-- Grid of 4 Vertical Process Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+                <!-- Card 1 -->
+                <div
+                    class="relative h-[480px] rounded-[22px] overflow-hidden shadow-md flex flex-col justify-between p-6 text-white group">
+                    <!-- Background Image -->
+                    <img src="https://github.com/vlambo3/landing-hornero/blob/main/design_1.jpeg?raw=true"
+                        alt="Tu Visión, Nuestro Punto De Partida"
+                        class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 z-0" />
+
+                    <!-- Dark Gradient Overlay Top Only (Para legibilidad del texto superior) -->
+                    <div
+                        class="absolute inset-x-0 top-0 h-3/5 bg-gradient-to-b from-black/85 via-black/70 to-transparent z-10 pointer-events-none">
+                    </div>
+
+                    <!-- Card Content Top -->
+                    <div class="relative z-20 space-y-2">
+                        <h3 class="text-lg font-bold leading-snug text-white">
+                            Tu Visión, Nuestro Punto De Partida
+                        </h3>
+                        <p class="text-[11px] sm:text-xs text-neutral-200 font-light leading-relaxed">
+                            Nos contás tu idea o necesidad. Conversamos sobre tus tiempos, tu estilo y tu presupuesto
+                            para entender exactamente qué estás buscando.
+                        </p>
+                    </div>
+
+                    <!-- Card Number Bottom -->
+                    <div class="relative z-20">
+                        <span
+                            class="text-6xl font-extrabold text-white tracking-tighter leading-none select-none drop-shadow-md">
+                            1
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="relative h-[480px] rounded-[22px] overflow-hidden shadow-md flex flex-col justify-between p-6 text-white group">
+                    <img src="https://github.com/vlambo3/landing-hornero/blob/main/design_2.png?raw=true"
+                        alt="Diseño Y Presupuesto Claros"
+                        class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 z-0" />
+                    <div
+                        class="absolute inset-x-0 top-0 h-3/5 bg-gradient-to-b from-black/85 via-black/70 to-transparent z-10 pointer-events-none">
+                    </div>
+
+                    <div class="relative z-20 space-y-2">
+                        <h3 class="text-lg font-bold leading-snug text-white">
+                            Diseño Y Presupuesto Claros
+                        </h3>
+                        <p class="text-[11px] sm:text-xs text-neutral-200 font-light leading-relaxed">
+                            En un plazo de 24 a 48 hs recibís tu presupuesto, con diseño y visualización 3D del proyecto
+                            para que veas exactamente cómo va a quedar antes de fabricar.
+                        </p>
+                    </div>
+
+                    <div class="relative z-20">
+                        <span
+                            class="text-6xl font-extrabold text-white tracking-tighter leading-none select-none drop-shadow-md">
+                            2
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="relative h-[480px] rounded-[22px] overflow-hidden shadow-md flex flex-col justify-between p-6 text-white group">
+                    <img src="https://github.com/vlambo3/landing-hornero/blob/main/design_3.jpg?raw=true"
+                        alt="Fabricación Artesanal Con Calidad Hornero"
+                        class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 z-0" />
+                    <div
+                        class="absolute inset-x-0 top-0 h-3/5 bg-gradient-to-b from-black/85 via-black/70 to-transparent z-10 pointer-events-none">
+                    </div>
+
+                    <div class="relative z-20 space-y-2">
+                        <h3 class="text-lg font-bold leading-snug text-white">
+                            Fabricación Artesanal Con Calidad Hornero
+                        </h3>
+                        <p class="text-[11px] sm:text-xs text-neutral-200 font-light leading-relaxed">
+                            Seleccionamos los materiales y herrajes acordados y fabricamos con precisión de taller. Cada
+                            pieza pasa por control de calidad antes de salir.
+                        </p>
+                    </div>
+
+                    <div class="relative z-20">
+                        <span
+                            class="text-6xl font-extrabold text-white tracking-tighter leading-none select-none drop-shadow-md">
+                            3
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="relative h-[480px] rounded-[22px] overflow-hidden shadow-md flex flex-col justify-between p-6 text-white group">
+                    <img src="https://github.com/vlambo3/landing-hornero/blob/main/design_4.png?raw=true"
+                        alt="Instalación Impecable, Listo Para Disfrutar"
+                        class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 z-0" />
+                    <div
+                        class="absolute inset-x-0 top-0 h-3/5 bg-gradient-to-b from-black/85 via-black/70 to-transparent z-10 pointer-events-none">
+                    </div>
+
+                    <div class="relative z-20 space-y-2">
+                        <h3 class="text-lg font-bold leading-snug text-white">
+                            Instalación Impecable, Listo Para Disfrutar
+                        </h3>
+                        <p class="text-[11px] sm:text-xs text-neutral-200 font-light leading-relaxed">
+                            Instalamos en tu casa, sin dejar cabos sueltos ni sorpresas de último momento. Tu proyecto,
+                            terminado y funcionando.
+                        </p>
+                    </div>
+
+                    <div class="relative z-20">
+                        <span
+                            class="text-6xl font-extrabold text-white tracking-tighter leading-none select-none drop-shadow-md">
+                            4
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: BANNER CTA (Hablemos de Tu Próximo Proyecto) -->
+    <section class="bg-[#3E3230] py-14 sm:py-20 text-white w-full">
+        <div class="max-w-5xl mx-auto px-6 text-center space-y-5">
+
+            <!-- Título principal en una sola línea -->
+            <h2
+                class="text-2xl sm:text-4xl lg:text-[42px] font-extrabold tracking-tight text-white leading-tight md:whitespace-nowrap">
+                Hablemos de Tu Próximo Proyecto
+            </h2>
+
+            <!-- Textos secundarios -->
+            <div class="space-y-1 text-xs sm:text-sm font-normal text-[#E2D9D5] leading-relaxed max-w-3xl mx-auto">
+                <p>Estamos listos para transformar tus ideas en muebles y amoblamientos que amarás.</p>
+                <p>Contactanos para recibir asesoramiento personalizado y un presupuesto a medida.</p>
+            </div>
+
+            <!-- Botón Píldora con borde y círculo verde -->
+            <div class="pt-3 flex justify-center">
+                <a href="https://wa.me/5492612350202?text=Hola!%20Quiero%20hablar%20de%20mi%20pr%C3%B3ximo%20proyecto."
+                    target="_blank" rel="noopener noreferrer"
+                    class="bg-[#D28377] hover:bg-[#c27367] text-white border border-[#ECA39A]/60 pl-8 pr-1.5 py-1.5 rounded-full inline-flex items-center space-x-4 transition-all duration-300 shadow-sm group hover:scale-105">
+                    <span class="text-sm font-medium tracking-wide text-white pr-2">Contactar</span>
+
+                    <!-- Círculo Verde con Ícono -->
+                    <div
+                        class="w-8 h-8 rounded-full bg-[#25D366] flex items-center justify-center text-white shadow-inner group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-phone text-xs transform -rotate-12"></i>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 3: SERVICIOS / QUÉ HACEMOS -->
+    <section id="servicios" class="py-16 sm:py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+            <!-- Section Title -->
+            <div class="text-center max-w-3xl mx-auto mb-16 sm:mb-24 space-y-3">
+                <span class="text-xs sm:text-sm font-bold uppercase tracking-[0.25em] text-brandLabel">
+                    SERVICIOS
+                </span>
+                <h3 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brandTextDark tracking-tight">
+                    Qué Hacemos
+                </h3>
+                <p class="text-sm sm:text-base text-brandTextMuted leading-relaxed">
+                    Soluciones a medida para cada espacio y cada proyecto.
+                </p>
+            </div>
+
+            <!-- SERVICES LIST (ALTERNATING LAYOUTS) -->
+            <div class="space-y-20 sm:space-y-32">
+
+                <!-- SERVICE 1: DISEÑO Y VISUALIZACIÓN 3D (Image Left, Content Right) -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+
+                    <!-- Image Column with Layered Offsets -->
+                    <div class="lg:col-span-6 relative">
+                        <div
+                            class="relative z-10 rounded-[28px] overflow-hidden shadow-xl bg-white border border-neutral-100">
+                            <img src="https://github.com/vlambo3/landing-hornero/blob/main/3D.jpg?raw=true"
+                                alt="Diseño Y Visualización 3D" class="w-full h-[280px] sm:h-[380px] object-cover" />
+                        </div>
+                        <!-- Layered Background Accent Cards matching screenshot -->
+                        <div
+                            class="absolute -top-5 -left-5 w-3/4 h-3/4 bg-neutral-100 rounded-[28px] -z-10 hidden sm:block">
+                        </div>
+                        <div
+                            class="absolute -bottom-5 -right-5 w-1/2 h-1/2 bg-neutral-100/70 rounded-[28px] -z-10 hidden sm:block">
+                        </div>
+                    </div>
+
+                    <!-- Content Column -->
+                    <div class="lg:col-span-6 space-y-4 lg:pl-4">
+                        <h3 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-brandTextDark tracking-tight">
+                            Diseño Y Visualización 3D
+                        </h3>
+                        <p class="text-sm sm:text-base text-brandTextMuted leading-relaxed font-light">
+                            Antes de fabricar, diseñamos tu mueble en 3D para que veas exactamente cómo va a quedar en
+                            tu espacio. Ajustamos el diseño con vos hasta encontrar la propuesta ideal.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- SERVICE 2: COCINAS A MEDIDA (Content Left, Multi-Image Collage Right) -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+
+                    <!-- Content Column (Left on Desktop) -->
+                    <div class="lg:col-span-6 lg:order-1 order-2 space-y-4 lg:pr-4">
+                        <h3 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-brandTextDark tracking-tight">
+                            Cocinas A Medida
+                        </h3>
+                        <p class="text-sm sm:text-base text-brandTextMuted leading-relaxed font-light">
+                            Diseño y fabricación de cocinas en melamina, MDF, enchapado y madera maciza. Bajo mesadas,
+                            alacenas, islas y módulos pensados para tu forma de cocinar y vivir.
+                        </p>
+                    </div>
+
+                    <!-- Collage Images Column (Right on Desktop) -->
+                    <div class="lg:col-span-6 lg:order-2 order-1 relative">
+                        <div class="grid grid-cols-12 gap-4 items-center">
+                            <!-- Left Stack (2 Small Cards) -->
+                            <div class="col-span-5 space-y-4">
+                                <div class="rounded-[18px] overflow-hidden shadow-md">
+                                    <img src="https://github.com/vlambo3/landing-hornero/blob/main/kitchen_1.jpeg?raw=true"
+                                        alt="Detalle de Cocina 1" class="w-full h-28 sm:h-36 object-cover" />
+                                </div>
+                                <div class="rounded-[18px] overflow-hidden shadow-md">
+                                    <img src="https://github.com/vlambo3/landing-hornero/blob/main/kitchen_2%20(1).png?raw=true"
+                                        alt="Detalle de Cocina 2" class="w-full h-32 sm:h-44 object-cover" />
+                                </div>
+                            </div>
+
+                            <!-- Right Main Card -->
+                            <div class="col-span-7 relative">
+                                <div class="rounded-[28px] overflow-hidden shadow-xl bg-white">
+                                    <img src="https://github.com/vlambo3/landing-hornero/blob/main/kitchen_3.jpg?raw=true"
+                                        alt="Cocinas A Medida Principal"
+                                        class="w-full h-[260px] sm:h-[360px] object-cover" />
+                                </div>
+                                <!-- Background card layer behind main image -->
+                                <div
+                                    class="absolute -top-4 -right-4 w-full h-full bg-neutral-100 rounded-[28px] -z-10 hidden sm:block">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- SERVICE 3: PLACARES Y VESTIDORES A MEDIDA (Image Left, Content Right) -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+
+                    <!-- Image Column -->
+                    <div class="lg:col-span-6 relative">
+                        <div class="relative z-10 rounded-[28px] overflow-hidden shadow-xl bg-white">
+                            <img src="https://github.com/vlambo3/landing-hornero/blob/main/closets_1.jpg?raw=true"
+                                alt="Placares Y Vestidores A Medida"
+                                class="w-full h-[280px] sm:h-[380px] object-cover" />
+                        </div>
+                        <div
+                            class="absolute -top-5 -left-5 w-3/4 h-3/4 bg-neutral-100 rounded-[28px] -z-10 hidden sm:block">
+                        </div>
+                    </div>
+
+                    <!-- Content Column -->
+                    <div class="lg:col-span-6 space-y-4 lg:pl-4">
+                        <h3 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-brandTextDark tracking-tight">
+                            Placares Y Vestidores A Medida
+                        </h3>
+                        <p class="text-sm sm:text-base text-brandTextMuted leading-relaxed font-light">
+                            Interiores optimizados, herrajes soft-close y aprovechamiento total del espacio disponible,
+                            con el diseño que se adapta a vos.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- SERVICE 4: MUEBLES Y MOBILIARIO EN GENERAL (Image Right, Content Left) -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+
+                    <!-- Content Column (Left on Desktop) -->
+                    <div class="lg:col-span-6 lg:order-1 order-2 space-y-4 lg:pr-4">
+                        <h3 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-brandTextDark tracking-tight">
+                            Muebles y Mobiliario en General
+                        </h3>
+                        <p class="text-sm sm:text-base text-brandTextMuted leading-relaxed font-light">
+                            Mesas, cómodas, racks, muebles de living y piezas de diseño exclusivo en madera y melamina,
+                            integradas al estilo de cada ambiente.
+                        </p>
+                    </div>
+
+                    <!-- Image Column (Right on Desktop) -->
+                    <div class="lg:col-span-6 lg:order-2 order-1 relative">
+                        <div class="relative z-10 rounded-[28px] overflow-hidden shadow-xl bg-white">
+                            <img src="https://github.com/vlambo3/landing-hornero/blob/main/business.jpeg?raw=true"
+                                alt="Muebles y Mobiliario En General"
+                                class="w-full h-[280px] sm:h-[380px] object-cover" />
+                        </div>
+                        <div
+                            class="absolute -top-5 -right-5 w-3/4 h-3/4 bg-neutral-100 rounded-[28px] -z-10 hidden sm:block">
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <!-- SERVICE 5: MOBILIARIO PARA DESARROLLOS RESIDENCIALES (Images Left, Content Right) -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+
+                    <!-- Collage Images Column -->
+                    <div class="lg:col-span-6 lg:order-1 order-1 relative">
+                        <div class="grid grid-cols-12 gap-4 items-center">
+
+                            <!-- Left Stack: 2 Small Cards (Ahora a la izquierda) -->
+                            <div class="col-span-5 space-y-4">
+                                <div class="rounded-[22px] overflow-hidden shadow-md bg-white">
+                                    <img src="https://github.com/vlambo3/landing-hornero/blob/main/general_furniture_1.png?raw=true"
+                                        alt="Detalle de Mobiliario 1" class="w-full h-32 sm:h-40 object-cover" />
+                                </div>
+                                <div class="rounded-[22px] overflow-hidden shadow-md bg-white">
+                                    <img src="https://github.com/vlambo3/landing-hornero/blob/main/general_furniture_2.png?raw=truehttps://github.com/vlambo3/landing-hornero/blob/main/general_furniture_3.png?raw=true"
+                                        alt="Detalle de Mobiliario 2" class="w-full h-32 sm:h-40 object-cover" />
+                                </div>
+                            </div>
+
+                            <!-- Right Main Card (Ahora a la derecha) -->
+                            <div class="col-span-7 relative">
+                                <!-- Background card layer behind main image -->
+                                <div
+                                    class="absolute -top-4 -right-4 w-full h-full bg-neutral-100 rounded-[28px] -z-10 hidden sm:block">
+                                </div>
+
+                                <div class="rounded-[28px] overflow-hidden shadow-xl bg-white relative z-10">
+                                    <img src="https://github.com/vlambo3/landing-hornero/blob/main/general_furniture_3.png?raw=true"
+                                        alt="Mobiliario Para Desarrollos Residenciales Principal"
+                                        class="w-full h-[280px] sm:h-[380px] object-cover" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Content Column (Right on Desktop) -->
+                    <div class="lg:col-span-6 lg:order-2 order-2 space-y-4 lg:pl-4">
+                        <h3 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-brandTextDark tracking-tight">
+                            Mobiliario Para Desarrollos Residenciales
+                        </h3>
+                        <p class="text-sm sm:text-base text-brandTextMuted leading-relaxed font-light">
+                            Equipamiento a medida para barrios privados y desarrollos: recepciones, módulos de
+                            correspondencia y amenities. Trabajamos en alianza con desarrolladores de la región.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 4: NUESTAS LINEAS -->
+    <section id="lineas" class="pricing-section pt-24 pb-16 sm:pt-24 sm:pb-24 bg-white">
+        <p class="eyebrow">NUESTRAS LÍNEAS</p>
+        <h3 class="title">Elegí el nivel que tu proyecto necesita</h3>
+        <p class="subtitle">Tres líneas, un mismo compromiso con la calidad.</p>
+
+        <div class="cards">
+            <article class="card">
+                <h2>Franco</h2>
+                <p class="description">
+                    Calidad que cumple. Materiales confiables y funcionales para un
+                    mueble bien hecho, con la garantía Hornero.
+                </p>
+                <div class="features">
+                    <div class="feature"><span class="check">✓</span><span>Herrajes Euro</span></div>
+                    <div class="feature"><span class="check">✓</span><span>Cantos Internos 0.45 mm</span></div>
+                    <div class="feature"><span class="check">✓</span><span>Cantos Exteriores 2 mm</span></div>
+                    <div class="feature"><span class="check">✓</span><span>Interior blanco</span></div>
+                    <div class="feature"><span class="check">✓</span><span>Correderas telescópicas</span></div>
+                </div>
+            </article>
+
+            <article class="card featured">
+                <h2>Aluvional</h2>
+                <p class="description">
+                    Nuestro estándar. El equilibrio ideal entre calidad premium,
+                    durabilidad y diseño. Es lo que Hornero elige para su propia casa.
+                </p>
+                <div class="features">
+                    <div class="feature"><span class="check">✓</span><span>Herrajes Hafele</span></div>
+                    <div class="feature"><span class="check">✓</span><span>Interior con placa de color</span></div>
+                    <div class="feature"><span class="check">✓</span><span>Iluminación led</span></div>
+                    <div class="feature"><span class="check">✓</span><span>Puertas con cierre suave</span></div>
+                    <div class="feature"><span class="check">✓</span><span>Correderas con cierre suave</span></div>
+                </div>
+            </article>
+
+            <article class="card">
+                <h2>Calcáreo</h2>
+                <p class="description">
+                    Lo mejor que existe. Materiales de primer nivel mundial,
+                    terminaciones de lujo y detalles que hacen la diferencia cada día.
+                </p>
+                <div class="features">
+                    <div class="feature"><span class="check">✓</span><span>Herrajes Blum</span></div>
+                    <div class="feature"><span class="check">✓</span><span>Correderas ocultas</span></div>
+                    <div class="feature"><span class="check">✓</span><span>Iluminación led Touch</span></div>
+                    <div class="feature"><span class="check">✓</span><span>Frente Perfect Sense</span></div>
+                    <div class="feature"><span class="check">✓</span><span>Accesorios metálicos en Acero o color</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- SECTION 5: BANNER CTA (Hablemos de Tu Próximo Proyecto) -->
+    <section class="bg-[#3E3230] py-14 sm:py-20 text-white w-full">
+        <div class="max-w-5xl mx-auto px-6 text-center space-y-5">
+
+            <!-- Título principal en una sola línea -->
+            <h2
+                class="text-2xl sm:text-4xl lg:text-[42px] font-extrabold tracking-tight text-white leading-tight md:whitespace-nowrap">
+                Hablemos de Tu Próximo Proyecto
+            </h2>
+
+            <!-- Textos secundarios -->
+            <div class="space-y-1 text-xs sm:text-sm font-normal text-[#E2D9D5] leading-relaxed max-w-3xl mx-auto">
+                <p>Estamos listos para transformar tus ideas en muebles y amoblamientos que amarás.</p>
+                <p>Contactanos para recibir asesoramiento personalizado y un presupuesto a medida.</p>
+            </div>
+
+            <!-- Botón Píldora con borde y círculo verde -->
+            <div class="pt-3 flex justify-center">
+                <a href="https://wa.me/5492612350202?text=Hola!%20Quiero%20hablar%20de%20mi%20pr%C3%B3ximo%20proyecto."
+                    target="_blank" rel="noopener noreferrer"
+                    class="bg-[#D28377] hover:bg-[#c27367] text-white border border-[#ECA39A]/60 pl-8 pr-1.5 py-1.5 rounded-full inline-flex items-center space-x-4 transition-all duration-300 shadow-sm group hover:scale-105">
+                    <span class="text-sm font-medium tracking-wide text-white pr-2">Contactar</span>
+
+                    <!-- Círculo Verde con Ícono -->
+                    <div
+                        class="w-8 h-8 rounded-full bg-[#25D366] flex items-center justify-center text-white shadow-inner group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-phone text-xs transform -rotate-12"></i>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 6: TESTIMONIOS (Carrusel) -->
+    <section id="testimonios" class="pt-24 pb-16 sm:pt-24 sm:pb-24 bg-white">
+
+        <!-- Header Section -->
+        <div class="text-center max-w-3xl mx-auto mb-16 sm:mb-24 space-y-3">
+            <span class="text-xs sm:text-sm font-bold uppercase tracking-[0.25em] text-brandLabel">
+                TESTIMONIOS
+            </span>
+            <h3 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brandTextDark tracking-tight">
+                Lo Que Opinan Nuestros Clientes
+            </h3>
+        </div>
+
+        <!-- Content Container -->
+        <div class="relative px-4 sm:px-8 md:px-12">
+
+            <!-- Botón Flecha Izquierda (Desktop) -->
+            <button id="prev-btn-desktop" aria-label="Anterior"
+                class="nav-btn absolute -left-2 sm:left-1 top-1/2 -translate-y-1/2 z-20 hidden md:flex">
+                <i class="fa-solid fa-arrow-left text-base"></i>
+            </button>
+
+            <!-- Botón Flecha Derecha (Desktop) -->
+            <button id="next-btn-desktop" aria-label="Siguiente"
+                class="nav-btn absolute -right-2 sm:right-1 top-1/2 -translate-y-1/2 z-20 hidden md:flex">
+                <i class="fa-solid fa-arrow-right text-base"></i>
+            </button>
+
+            <!-- Carrusel de Tarjetas -->
+            <div id="testimonials-container"
+                class="flex overflow-x-auto gap-6 items-stretch snap-x snap-mandatory scroll-smooth no-scrollbar py-4">
+
+                <!-- CARD 1: Melisa Lopez -->
+                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer"
+                    class="testimonial-card relative overflow-hidden bg-cover bg-center h-[520px] sm:h-[540px] flex flex-col justify-end p-4 sm:p-5 block group w-full md:w-[calc((100%-3rem)/3)] flex-shrink-0 snap-start"
+                    style="background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1000&auto=format&fit=crop');">
+
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none">
+                    </div>
+
+                    <div
+                        class="overlay-card relative z-10 pt-10 pb-6 px-5 sm:px-6 text-center mt-auto transition-transform duration-300 group-hover:scale-[1.01]">
+                        <div
+                            class="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 rounded-full border-4 border-white bg-white flex items-center justify-center shadow-md overflow-hidden">
+                            <svg class="w-7 h-7" viewBox="0 0 24 24">
+                                <path fill="#4285F4"
+                                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                                <path fill="#34A853"
+                                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                                <path fill="#FBBC05"
+                                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
+                                <path fill="#EA4335"
+                                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
+                            </svg>
+                        </div>
+
+                        <h3 class="font-bold text-gray-900 text-lg sm:text-xl leading-snug mb-1">Melisa Lopez</h3>
+
+                        <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-5 font-normal px-1">
+                            "Excelente trabajo, asesoramiento, tiempo de entrega e instalación. Hicimos amoblamiento de
+                            cocina, quedó hermoso! Y son muy amables y respetuosos. Recomendamos 100%"
+                        </p>
+
+                        <div class="flex justify-center items-center gap-1">
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- CARD 2: Marcia Olivera -->
+                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer"
+                    class="testimonial-card relative overflow-hidden bg-cover bg-center h-[520px] sm:h-[540px] flex flex-col justify-end p-4 sm:p-5 block group w-full md:w-[calc((100%-3rem)/3)] flex-shrink-0 snap-start"
+                    style="background-image: url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1000&auto=format&fit=crop');">
+
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none">
+                    </div>
+
+                    <div
+                        class="overlay-card relative z-10 pt-10 pb-6 px-5 sm:px-6 text-center mt-auto transition-transform duration-300 group-hover:scale-[1.01]">
+                        <div
+                            class="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 rounded-full border-4 border-white bg-white flex items-center justify-center shadow-md overflow-hidden">
+                            <svg class="w-7 h-7" viewBox="0 0 24 24">
+                                <path fill="#4285F4"
+                                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                                <path fill="#34A853"
+                                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                                <path fill="#FBBC05"
+                                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
+                                <path fill="#EA4335"
+                                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
+                            </svg>
+                        </div>
+
+                        <h3 class="font-bold text-gray-900 text-lg sm:text-xl leading-snug mb-1">Marcia Olivera</h3>
+
+                        <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-5 font-normal px-1">
+                            "Excelente el trabajo hecho en mi casa, aberturas acorde a lo pensado y muy prolijo el
+                            resultado final. Destaco la buena predisposición para el asesoramiento y demás."
+                        </p>
+
+                        <div class="flex justify-center items-center gap-1">
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- CARD 3: Fernando Mezzabotta -->
+                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer"
+                    class="testimonial-card relative overflow-hidden bg-cover bg-center h-[520px] sm:h-[540px] flex flex-col justify-end p-4 sm:p-5 block group w-full md:w-[calc((100%-3rem)/3)] flex-shrink-0 snap-start"
+                    style="background-image: url('https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1000&auto=format&fit=crop');">
+
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none">
+                    </div>
+
+                    <div
+                        class="overlay-card relative z-10 pt-10 pb-6 px-5 sm:px-6 text-center mt-auto transition-transform duration-300 group-hover:scale-[1.01]">
+                        <div
+                            class="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 rounded-full border-4 border-white bg-white flex items-center justify-center shadow-md overflow-hidden">
+                            <svg class="w-7 h-7" viewBox="0 0 24 24">
+                                <path fill="#4285F4"
+                                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                                <path fill="#34A853"
+                                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                                <path fill="#FBBC05"
+                                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
+                                <path fill="#EA4335"
+                                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
+                            </svg>
+                        </div>
+
+                        <h3 class="font-bold text-gray-900 text-lg sm:text-xl leading-snug mb-1">Fernando Mezzabotta
+                        </h3>
+
+                        <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-5 font-normal px-1">
+                            "Juan me hizo un rack para el tele hermoso. Estoy muy contento con el resultado y la
+                            profesionalidad del trabajo."
+                        </p>
+
+                        <div class="flex justify-center items-center gap-1">
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- CARD 4: Selva -->
+                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer"
+                    class="testimonial-card relative overflow-hidden bg-cover bg-center h-[520px] sm:h-[540px] flex flex-col justify-end p-4 sm:p-5 block group w-full md:w-[calc((100%-3rem)/3)] flex-shrink-0 snap-start"
+                    style="background-image: url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=1000&auto=format&fit=crop');">
+
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none">
+                    </div>
+
+                    <div
+                        class="overlay-card relative z-10 pt-10 pb-6 px-5 sm:px-6 text-center mt-auto transition-transform duration-300 group-hover:scale-[1.01]">
+                        <div
+                            class="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 rounded-full border-4 border-white bg-white flex items-center justify-center shadow-md overflow-hidden">
+                            <svg class="w-7 h-7" viewBox="0 0 24 24">
+                                <path fill="#4285F4"
+                                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                                <path fill="#34A853"
+                                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                                <path fill="#FBBC05"
+                                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
+                                <path fill="#EA4335"
+                                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
+                            </svg>
+                        </div>
+
+                        <h3 class="font-bold text-gray-900 text-lg sm:text-xl leading-snug mb-1">Selva</h3>
+
+                        <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-5 font-normal px-1">
+                            "Nos entregaron los muebles tal cual los pedimos y aún más lindos. Algo muy importante es
+                            que son de excelente calidad. Muy recomendado!!!!"
+                        </p>
+
+                        <div class="flex justify-center items-center gap-1">
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- CARD 5: Franco Fiorini -->
+                <a href="https://share.google/KyWitXoJw3GPv5BdA" target="_blank" rel="noopener noreferrer"
+                    class="testimonial-card relative overflow-hidden bg-cover bg-center h-[520px] sm:h-[540px] flex flex-col justify-end p-4 sm:p-5 block group w-full md:w-[calc((100%-3rem)/3)] flex-shrink-0 snap-start"
+                    style="background-image: url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=1000&auto=format&fit=crop');">
+
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none">
+                    </div>
+
+                    <div
+                        class="overlay-card relative z-10 pt-10 pb-6 px-5 sm:px-6 text-center mt-auto transition-transform duration-300 group-hover:scale-[1.01]">
+                        <div
+                            class="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 rounded-full border-4 border-white bg-white flex items-center justify-center shadow-md overflow-hidden">
+                            <svg class="w-7 h-7" viewBox="0 0 24 24">
+                                <path fill="#4285F4"
+                                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                                <path fill="#34A853"
+                                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                                <path fill="#FBBC05"
+                                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
+                                <path fill="#EA4335"
+                                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
+                            </svg>
+                        </div>
+
+                        <h3 class="font-bold text-gray-900 text-lg sm:text-xl leading-snug mb-1">Franco Fiorini</h3>
+
+                        <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-5 font-normal px-1">
+                            "Excelente atención y compromiso. Juan está en todos los detalles y se preocupa por brindar
+                            el mejor asesoramiento."
+                        </p>
+
+                        <div class="flex justify-center items-center gap-1">
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- CARD 6: Dario Dalla Torre -->
+                <a href="https://share.google/nT7ZQJwYRz6cq1xhf" target="_blank" rel="noopener noreferrer"
+                    class="testimonial-card relative overflow-hidden bg-cover bg-center h-[520px] sm:h-[540px] flex flex-col justify-end p-4 sm:p-5 block group w-full md:w-[calc((100%-3rem)/3)] flex-shrink-0 snap-start"
+                    style="background-image: url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=1000&auto=format&fit=crop');">
+
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none">
+                    </div>
+
+                    <div
+                        class="overlay-card relative z-10 pt-10 pb-6 px-5 sm:px-6 text-center mt-auto transition-transform duration-300 group-hover:scale-[1.01]">
+                        <div
+                            class="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 rounded-full border-4 border-white bg-white flex items-center justify-center shadow-md overflow-hidden">
+                            <svg class="w-7 h-7" viewBox="0 0 24 24">
+                                <path fill="#4285F4"
+                                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                                <path fill="#34A853"
+                                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                                <path fill="#FBBC05"
+                                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
+                                <path fill="#EA4335"
+                                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
+                            </svg>
+                        </div>
+
+                        <h3 class="font-bold text-gray-900 text-lg sm:text-xl leading-snug mb-1">Dario Dalla Torre</h3>
+
+                        <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-5 font-normal px-1">
+                            "Totalmente recomendable. Excelente atencion, compromiso y calidad del mueble"
+                        </p>
+
+                        <div class="flex justify-center items-center gap-1">
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                            <i class="fa-solid fa-star star-color text-xs sm:text-sm"></i>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- Botones Móviles -->
+            <div class="flex md:hidden justify-center items-center gap-4 mt-8">
+                <button id="prev-btn-mobile" aria-label="Anterior" class="nav-btn">
+                    <i class="fa-solid fa-arrow-left text-sm"></i>
+                </button>
+                <button id="next-btn-mobile" aria-label="Siguiente" class="nav-btn">
+                    <i class="fa-solid fa-arrow-right text-sm"></i>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 7: ALIANZAS B2B -->
+    <section id="alianzas" class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+            <div class="lg:col-span-5 relative flex justify-center items-center py-6 lg:py-0">
+                <!-- Outer Wrapper with layered background cards matching original design -->
+                <div class="relative w-full max-w-[480px] lg:max-w-none aspect-[4/3] sm:aspect-[1.1/1]">
+
+                    <!-- Top-Left Light Grey Card Layer -->
+                    <div class="absolute -top-6 -left-6 sm:-top-8 sm:-left-8 w-[68%] h-[65%] bg-card-shape-1 z-0"></div>
+
+                    <!-- Right-Center Light Grey Card Layer -->
+                    <div class="absolute -right-4 top-1/4 sm:-right-6 w-[55%] h-[60%] bg-card-shape-2 z-0"></div>
+
+                    <!-- Main Image Container -->
+                    <div
+                        class="main-image-card relative z-10 w-[92%] sm:w-[90%] h-[90%] overflow-hidden my-auto ml-2 sm:ml-4">
+                        <img src="https://github.com/vlambo3/landing-hornero/blob/main/Alianzas_B2B_1%20(1).jpg?raw=true"
+                            alt="Hornero Mobiliario Detalle Madera" class="w-full h-full object-cover object-center"
+                            onerror="this.src='https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1000&auto=format&fit=crop'">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 flex flex-col justify-center space-y-5 lg:pl-4">
+
+                <!-- Subtitle Header -->
+                <div>
+                    <span class="subtitle-text block mb-2">ALIANZAS B2B / ARQUITECTOS Y DESARROLLOS</span>
+                    <h2 class="heading-primary text-3xl sm:text-4xl lg:text-[2.65rem] leading-tight mb-3">
+                        ¿Sos Arquitecto, Diseñador O Desarrollador?
+                    </h2>
+                    <p class="heading-secondary text-xl sm:text-2xl text-gray-800">
+                        Encontrá en Hornero Mobiliario un aliado confiable para tus proyectos.
+                    </p>
+                </div>
+
+                <!-- Intro Description -->
+                <p class="text-body-custom pt-1">
+                    Sabemos que la excelencia en el detalle es crucial para tus proyectos. En Hornero Mobiliario nos
+                    convertimos en tu socio estratégico, ofreciendo soluciones a medida, calidad y un proceso de
+                    colaboración fluido para llevar tus ideas más ambiciosas a la realidad.
+                </p>
+
+                <!-- Sub-section 1: Estudios de Arquitectura -->
+                <div class="pt-2 space-y-2">
+                    <h2 class="section-subtitle">Para estudios de arquitectura y diseño:</h2>
+                    <ul class="space-y-1.5 pl-4 sm:pl-5">
+                        <li
+                            class="bullet-list-text relative pl-3 before:content-['•'] before:absolute before:left-0 before:text-gray-800 before:font-bold">
+                            Ejecución precisa y acabados premium, fieles a tu diseño
+                        </li>
+                        <li
+                            class="bullet-list-text relative pl-3 before:content-['•'] before:absolute before:left-0 before:text-gray-800 before:font-bold">
+                            Flexibilidad y adaptación a tus especificaciones técnicas y tiempos de obra
+                        </li>
+                        <li
+                            class="bullet-list-text relative pl-3 before:content-['•'] before:absolute before:left-0 before:text-gray-800 before:font-bold">
+                            Comunicación directa, sin intermediarios ni sorpresas en obra
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Sub-section 2: Desarrollos Residenciales -->
+                <div class="pt-2 space-y-2">
+                    <h2 class="section-subtitle">Para desarrollos residenciales:</h2>
+                    <ul class="space-y-1.5 pl-4 sm:pl-5">
+                        <li
+                            class="bullet-list-text relative pl-3 before:content-['•'] before:absolute before:left-0 before:text-gray-800 before:font-bold">
+                            Fabricamos mobiliario a medida para espacios comunes y garitas de acceso. Si estás
+                            desarrollando un barrio privado, conversemos sobre cómo podemos sumar valor a tu proyecto
+                            desde el inicio
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 8: NUESTRA ESCENCIA -->
+    <section id="escencia" class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+            <!-- LEFT COLUMN: Text Content -->
+            <div class="lg:col-span-6 flex flex-col justify-center space-y-6 max-w-xl lg:max-w-none mx-auto lg:mx-0">
+
+                <!-- Category Subtitle Tag -->
+                <div>
+                    <span class="subtitle-tag block mb-3">NUESTRA ESCENCIA</span>
+                    <!-- Main Titles -->
+                    <h1 class="main-heading text-3xl sm:text-4xl lg:text-[2.65rem] mb-2">
+                        ¿Quienes Somos?
+                    </h1>
+                    <h2 class="sub-heading text-xl sm:text-2xl lg:text-[1.65rem]">
+                        Pasión por el Diseño, Compromiso con la Excelencia
+                    </h2>
+                </div>
+
+                <!-- Descriptive Paragraphs -->
+                <div class="space-y-5 pt-1">
+                    <p class="paragraph-text">
+                        Hornero Mobiliario nace de la convicción de que cada espacio merece piezas únicas que armonicen
+                        con la vida de quienes lo habitan. No somos solo fabricantes; somos diseñadores apasionados por
+                        la solución de problemas a través del ingenio y la creación de muebles que perduran.
+                    </p>
+
+                    <p class="paragraph-text">
+                        Nuestra historia comenzó hace más de ocho años, arraigada en un nuevo comienzo en Mendoza.
+                        Inspirado por un cambio de vida y una profunda pasión por el diseño y la ingeniería, nació
+                        Hornero Mobiliario. El “Hornero”, símbolo de ingenio y construcción meticulosa, representa
+                        nuestra filosofía: diseñar y construir con dedicación, cuidando cada detalle para crear un hogar
+                        sólido y funcional.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- RIGHT COLUMN: Graphic Card Stack with Logo Image -->
+            <div class="lg:col-span-6 flex justify-center items-center py-6 lg:py-0">
+
+                <!-- Outer Aspect Wrapper for responsive proportions -->
+                <div class="relative w-full max-w-[540px] aspect-[1.35/1] sm:aspect-[1.45/1]">
+
+                    <!-- Background Card 1 (Top Left Layer) -->
+                    <div class="absolute -top-7 -left-5 sm:-top-9 sm:-left-7 w-[78%] h-[72%] card-bg-topleft z-0"></div>
+
+                    <!-- Background Card 2 (Far Right Layer) -->
+                    <div class="absolute -right-5 top-1/3 sm:-right-8 w-[48%] h-[68%] card-bg-right z-0"></div>
+
+                    <!-- Main Foreground Card with Logo Image filling the container -->
+                    <div
+                        class="card-main-fg relative z-10 w-[90%] h-[90%] overflow-hidden flex items-center justify-center my-auto ml-1 sm:ml-2">
+                        <img src="https://github.com/vlambo3/landing-hornero/blob/main/logo.jpg?raw=true"
+                            alt="Hornero Mobiliario Logo" class="w-full h-full object-cover object-center">
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+    <!-- SECTION 9: BANNER CTA (Hablemos de Tu Próximo Proyecto) -->
+    <section class="bg-[#3E3230] py-14 sm:py-20 text-white w-full mb-16 sm:mb-24">
+        <div class="max-w-5xl mx-auto px-6 text-center space-y-5">
+
+            <!-- Título principal en una sola línea -->
+            <h2
+                class="text-2xl sm:text-4xl lg:text-[42px] font-extrabold tracking-tight text-white leading-tight md:whitespace-nowrap">
+                Hablemos de Tu Próximo Proyecto
+            </h2>
+
+            <!-- Textos secundarios -->
+            <div class="space-y-1 text-xs sm:text-sm font-normal text-[#E2D9D5] leading-relaxed max-w-3xl mx-auto">
+                <p>Estamos listos para transformar tus ideas en muebles y amoblamientos que amarás.</p>
+                <p>Contactanos para recibir asesoramiento personalizado y un presupuesto a medida.</p>
+            </div>
+
+            <!-- Botón Píldora con borde y círculo verde -->
+            <div class="pt-3 flex justify-center">
+                <a href="https://wa.me/5492612350202?text=Hola!%20Quiero%20hablar%20de%20mi%20pr%C3%B3ximo%20proyecto."
+                    target="_blank" rel="noopener noreferrer"
+                    class="bg-[#D28377] hover:bg-[#c27367] text-white border border-[#ECA39A]/60 pl-8 pr-1.5 py-1.5 rounded-full inline-flex items-center space-x-4 transition-all duration-300 shadow-sm group hover:scale-105">
+                    <span class="text-sm font-medium tracking-wide text-white pr-2">Contactar</span>
+
+                    <!-- Círculo Verde con Ícono -->
+                    <div
+                        class="w-8 h-8 rounded-full bg-[#25D366] flex items-center justify-center text-white shadow-inner group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-phone text-xs transform -rotate-12"></i>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 10: FAQ -->
+    <section id="faq" class="max-w-6xl mx-auto w-full mb-16 sm:mb-24 px-4 scroll-mt-28 sm:scroll-mt-20">
+
+        <!-- TÍTULO DE LA SECCIÓN -->
+        <!-- TÍTULO MÁS PEQUEÑO -->
+        <div class="text-center mb-8">
+            <h2 class="faq-title text-2xl sm:text-3xl font-extrabold text-[#1a1a1a]">
+                Preguntas Frecuentes
+            </h2>
+        </div>
+
+        <!-- CONTENEDOR DE LAS TARJETAS EN 2 COLUMNAS -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
+
+            <!-- COLUMNA IZQUIERDA -->
+            <div class="space-y-6">
+
+                <!-- FAQ Item 1 (Tarjeta más compacta: p-4 sm:p-5) -->
+                <div class="faq-card bg-white rounded-xl p-4 sm:p-5 shadow-[0_5px_20px_rgba(0,0,0,0.03)] transition-all duration-300 active"
+                    data-faq>
+                    <button
+                        class="faq-btn w-full flex items-start justify-between text-left focus:outline-none cursor-pointer">
+                        <!-- Letra de la pregunta más pequeña: text-sm sm:text-base -->
+                        <span class="faq-question text-[#1a1a1a] font-bold text-sm sm:text-base pr-3 leading-snug">
+                            ¿Cuánto tarda un proyecto de cocina o amoblamiento a medida?
+                        </span>
+                        <span
+                            class="faq-icon text-[#1a1a1a] text-lg font-light mt-0.5 flex-shrink-0 select-none">−</span>
+                    </button>
+                    <!-- Letra de la respuesta más pequeña: text-xs sm:text-sm -->
+                    <div class="faq-answer mt-2 text-[#666666] text-xs sm:text-sm leading-relaxed">
+                        Depende de la complejidad y cantidad de módulos, pero en general el proceso completo (diseño,
+                        fabricación e instalación) toma entre 3 y 6 semanas desde la aprobación del presupuesto.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-card bg-white rounded-2xl p-4 sm:p-5 shadow-[0_10px_30px_rgba(0,0,0,0.04)] transition-all duration-300"
+                    data-faq>
+                    <button
+                        class="faq-btn w-full flex items-start justify-between text-left focus:outline-none cursor-pointer">
+                        <span class="faq-question text-[#1a1a1a] font-bold text-sm sm:text-base pr-3 leading-snug">
+                            ¿En qué materiales trabajan?
+                        </span>
+                        <span
+                            class="faq-icon text-[#1a1a1a] text-lg font-light mt-0.5 flex-shrink-0 select-none">+</span>
+                    </button>
+                    <div class="faq-answer mt-2 text-[#666666] text-xs sm:text-sm leading-relaxed hidden">
+                        Trabajamos con melaminas de alta calidad sobre MDF o aglomerado, maderas naturales seleccionadas
+                        y herrajes de primera línea con cierre suave, garantizando durabilidad y estética premium en
+                        cada mueble.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-card bg-white rounded-2xl p-4 sm:p-5 shadow-[0_10px_30px_rgba(0,0,0,0.04)] transition-all duration-300"
+                    data-faq>
+                    <button
+                        class="faq-btn w-full flex items-start justify-between text-left focus:outline-none cursor-pointer">
+                        <span class="faq-question text-[#1a1a1a] font-bold text-sm sm:text-base pr-3 leading-snug">
+                            ¿Hacen instalación en barrios privados o desarrollos residenciales?
+                        </span>
+                        <span
+                            class="faq-icon text-[#1a1a1a] text-xl font-light mt-0.5 flex-shrink-0 select-none">+</span>
+                    </button>
+                    <div class="faq-answer mt-2 text-[#666666] text-xs sm:text-sm leading-relaxed hidden">
+                        Sí, realizamos entregas e instalaciones completas en barrios privados y complejos residenciales,
+                        coordinando todos los detalles logísticos necesarios para el ingreso a la obra.
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- COLUMNA DERECHA -->
+            <div class="space-y-6">
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-card bg-white rounded-2xl p-4 sm:p-5 shadow-[0_10px_30px_rgba(0,0,0,0.04)] transition-all duration-300"
+                    data-faq>
+                    <button
+                        class="faq-btn w-full flex items-start justify-between text-left focus:outline-none cursor-pointer">
+                        <span class="faq-question text-[#1a1a1a] font-bold text-sm sm:text-base pr-4 leading-snug">
+                            ¿Cuál es la diferencia entre las líneas Franco, Aluvional y Calcareo?
+                        </span>
+                        <span
+                            class="faq-icon text-[#1a1a1a] text-xl font-light mt-0.5 flex-shrink-0 select-none">+</span>
+                    </button>
+                    <div class="faq-answer mt-3 text-[#666666] text-xs sm:text-sm leading-relaxed hidden">
+                        Cada línea responde a una identidad de diseño única inspirada en nuestra región y estilo
+                        constructivo, combinando texturas, volúmenes y detalles estéticos particulares según los
+                        requerimientos de cada cliente.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-card bg-white rounded-2xl p-4 sm:p-5 shadow-[0_10px_30px_rgba(0,0,0,0.04)] transition-all duration-300"
+                    data-faq>
+                    <button
+                        class="faq-btn w-full flex items-start justify-between text-left focus:outline-none cursor-pointer">
+                        <span class="faq-question text-[#1a1a1a] font-bold text-sm sm:text-base pr-4 leading-snug">
+                            ¿Trabajan con arquitectos y estudios de diseño?
+                        </span>
+                        <span
+                            class="faq-icon text-[#1a1a1a] text-xl font-light mt-0.5 flex-shrink-0 select-none">+</span>
+                    </button>
+                    <div class="faq-answer mt-3 text-[#666666] text-xs sm:text-sm leading-relaxed hidden">
+                        Sí, colaboramos de manera directa con arquitectos y diseñadores, interpretando fielmente sus
+                        planos y especificaciones técnicas para garantizar acabados de alta gama en obra.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="faq-card bg-white rounded-2xl p-4 sm:p-5 shadow-[0_10px_30px_rgba(0,0,0,0.04)] transition-all duration-300"
+                    data-faq>
+                    <button
+                        class="faq-btn w-full flex items-start justify-between text-left focus:outline-none cursor-pointer">
+                        <span class="faq-question text-[#1a1a1a] font-bold text-sm sm:text-base pr-4 leading-snug">
+                            ¿Cómo se calcula el presupuesto?
+                        </span>
+                        <span
+                            class="faq-icon text-[#1a1a1a] text-xl font-light mt-0.5 flex-shrink-0 select-none">+</span>
+                    </button>
+                    <div class="faq-answer mt-3 text-[#666666] text-xs sm:text-sm leading-relaxed hidden">
+                        El presupuesto se elabora en base a las medidas del espacio, los planos o bosquejos del
+                        proyecto, y la selección de materiales, herrajes y terminaciones solicitadas.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER INICIO -->
+    <footer class="bg-[#423536] text-[#e6dfdc] py-14 sm:py-16 px-6 sm:px-10 lg:px-16 w-full">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16 items-start">
+
+            <!-- COLUMNA 1: Logo y Nombre (PNG) -->
+            <div class="flex flex-col items-start justify-center">
+                <a href="#" class="flex flex-col items-center space-y-3 group">
+                    <!-- Reemplaza 'ruta-de-tu-logo.png' por el enlace o ruta de tu archivo PNG -->
+                    <img src="https://github.com/vlambo3/landing-hornero/blob/main/Logo%20Hornero%20Footer.png?raw=true"
+                        alt="Hornero Mobiliario Logo" class="h-24 sm:h-28 w-auto object-contain">
+                </a>
+            </div>
+
+            <!-- COLUMNA 2: Enlaces / Secciones Centrales -->
+            <div class="flex flex-col space-y-4 pt-2">
+                <a href="#" class="footer-link text-xs sm:text-sm transition-colors hover:text-white">Diseño y
+                    Visualizacion 3D</a>
+                <a href="#" class="footer-link text-xs sm:text-sm transition-colors hover:text-white">Cocinas A
+                    Medida</a>
+                <a href="#" class="footer-link text-xs sm:text-sm transition-colors hover:text-white">Placares y
+                    Vestidores a Medida</a>
+                <a href="#" class="footer-link text-xs sm:text-sm transition-colors hover:text-white">Sos Arquitecto,
+                    Diseñador o Desarrollador?</a>
+            </div>
+
+            <!-- COLUMNA 3: Enlaces Restantes e Iconos de Redes Sociales (PNG) -->
+            <div class="flex flex-col space-y-4 pt-2">
+                <a href="#" class="footer-link text-xs sm:text-sm transition-colors hover:text-white">Muebles y
+                    Mobiliario en General</a>
+                <a href="#" class="footer-link text-xs sm:text-sm transition-colors hover:text-white">Mobiliario para
+                    Desarrollos Residenciales</a>
+                <a href="#" class="footer-link text-xm sm:text-sm transition-colors hover:text-white">Quienes somos?</a>
+
+                <!-- Fila de Redes Sociales (Iconos PNG) -->
+                <div class="flex items-center space-x-5 pt-4">
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/horneromobiliario/" target="_blank" rel="noopener noreferrer"
+                        class="social-icon">
+                        <img src="https://github.com/vlambo3/landing-hornero/blob/main/Logo%20IG%20Footer.png?raw=true"
+                            alt="Instagram"
+                            class="w-6 h-6 object-contain opacity-90 hover:opacity-100 transition-opacity">
+                    </a>
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/5492612350202?text=Hola!%20Quiero%20más%20información%20sobre%20sus%20muebles%20y%20amoblamientos."
+                        target="_blank" rel="noopener noreferrer" class="social-icon">
+                        <img src="https://github.com/vlambo3/landing-hornero/blob/main/Logo%20Whatsapp%20Footer.png?raw=true"
+                            alt="WhatsApp"
+                            class="w-6 h-6 object-contain opacity-90 hover:opacity-100 transition-opacity">
+                    </a>
+                    <!-- Facebook -->
+                    <a href="https://facebook.com/Hornero.Carrodilla" target="_blank" rel="noopener noreferrer"
+                        class="social-icon">
+                        <img src="https://github.com/vlambo3/landing-hornero/blob/main/Logo%20Facebook%20Footer.png?raw=true"
+                            alt="Facebook"
+                            class="w-6 h-6 object-contain opacity-90 hover:opacity-100 transition-opacity">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- FOOTER FIN -->
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/5492612350202?text=Hola!%20Quiero%20más%20información%20sobre%20sus%20muebles%20y%20amoblamientos."
+        target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp"
+        class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20ba5a] text-white w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 whatsapp-pulse hover:scale-110">
+        <i class="fa-brands fa-whatsapp text-3xl sm:text-4xl"></i>
+    </a>
+
+    <!-- FOOTER SIMPLE 
+    <footer class="bg-neutral-900 text-neutral-400 py-8 text-center text-xs border-t border-neutral-800">
+        <p>&copy; 2026 Hornero Mobiliario. Todos los derechos reservados.</p>
+    </footer>
+    -->
+
+    <!-- LOGICA SCRIPT NAVBAR (SCROLL + MENU MOBILE)
+<script>
+
+</script> -->
+
+    <!-- Archivo JS Externo -->
+    <script src="script_landing.js"></script>
+    <script src="script_process.js"></script>
+    <script src="script.js"></script>
+    <script src="script_faq.js"></script>
+
+</body>
+
+</html>
