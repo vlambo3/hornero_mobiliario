@@ -1,0 +1,89 @@
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #ffffff;
+            color: #2b2b2b;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .subtitle-text {
+            color: #A38276;
+            letter-spacing: 0.18em;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .heading-primary {
+            color: #1a1a1a;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            line-height: 1.15;
+        }
+
+        .heading-secondary {
+            color: #1a1a1a;
+            font-weight: 500;
+            letter-spacing: -0.015em;
+            line-height: 1.35;
+        }
+
+        .text-body-custom {
+            color: #666666;
+            font-weight: 400;
+            line-height: 1.6;
+            font-size: 0.9375rem;
+        }
+
+        .section-subtitle {
+            color: #1a1a1a;
+            font-weight: 600;
+            font-size: 0.9375rem;
+        }
+
+        .bullet-list-text {
+            color: #555555;
+            font-size: 0.9rem;
+            line-height: 1.55;
+        }
+
+        /* Image Stack Background Cards */
+        .bg-card-shape-1 {
+            background-color: #f6f6f6;
+            border-radius: 20px;
+        }
+
+        .bg-card-shape-2 {
+            background-color: #f3f3f3;
+            border-radius: 20px;
+        }
+
+        .main-image-card {
+            border-radius: 20px;
+            box-shadow: 0 20px 45px -15px rgba(60, 40, 30, 0.22);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .main-image-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 25px 50px -12px rgba(60, 40, 30, 0.28);
+        }
+
+        /* SVG Stamp Overlay Simulation */
+        .stamp-overlay {
+            position: absolute;
+            top: 28%;
+            left: 36%;
+            transform: translate(-50%, -50%) rotate(-8deg);
+            width: 72px;
+            height: 72px;
+            border: 2.5px solid rgba(25, 20, 15, 0.85);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.85;
+            mix-blend-mode: multiply;
+            pointer-events: none;
+        }
+    

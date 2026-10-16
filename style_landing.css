@@ -1,0 +1,56 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #2D3748;
+    background-color: #FFFFFF;
+}
+
+/* Glassmorphism Efecto Figma */
+.glass-card {
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-button {
+    background: rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Sombra suave verde inferior en las tarjetas de la sección ¿Por qué? */
+.feature-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 20px 35px -10px rgba(72, 128, 92, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 25px 45px -10px rgba(72, 128, 92, 0.22);
+}
+
+/* Animación suave para el botón de WhatsApp */
+.whatsapp-pulse {
+    animation: pulse-green 2s infinite;
+}
+
+@keyframes pulse-green {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
